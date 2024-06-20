@@ -6,6 +6,10 @@
         height: 100%;
     }
 
+    header {
+        padding: 4em 6em;
+    }
+
     body {
         margin: 0;
         background: var(--dark-blue-main);
@@ -14,7 +18,7 @@
     }
 
     p {
-        color: var(--dark-blue-testimonials);
+        color: var(--white);
         font-size: 14px;
         margin: 10px 0;
     }
