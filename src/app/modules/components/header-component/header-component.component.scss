@@ -1,0 +1,11 @@
+.header-component {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
