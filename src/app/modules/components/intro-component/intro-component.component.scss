@@ -1,4 +1,5 @@
 .container {
+    position: relative; /* Necessário para posicionamento absoluto dentro */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,19 +7,18 @@
 }
 
 .text-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0 0 0;
-    width: 100vw;
-    height: 65vh;
+    width: 570px;
     text-align: center;
     gap: 20px;
-    background-image: url('/assets/images/bg-curvy-desktop.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: red 1px solid;
+    z-index: 1;
 }
 
 .text-container h1 {
@@ -32,4 +32,10 @@
 
 .text-container button {
     background-color: var(--cyan);
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    z-index: 0;
 }
