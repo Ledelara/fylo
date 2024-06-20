@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    width: 100vw;
+    height: 65vh;
+    text-align: center;
+    gap: 20px;
+    background-image: url('/assets/images/bg-curvy-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: red 1px solid;
+}
+
+.text-container h1 {
+    color: var(--white);
+    width: 570px;
+}
+
+.text-container p {
+    width: 570px;
+}
+
+.text-container button {
+    background-color: var(--cyan);
+}
