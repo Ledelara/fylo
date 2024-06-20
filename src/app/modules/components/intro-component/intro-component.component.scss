@@ -1,0 +1,41 @@
+.container {
+    position: relative; /* Necessário para posicionamento absoluto dentro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 570px;
+    text-align: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.text-container h1 {
+    color: var(--white);
+    width: 570px;
+}
+
+.text-container p {
+    width: 570px;
+}
+
+.text-container button {
+    background-color: var(--cyan);
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
