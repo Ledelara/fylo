@@ -1,0 +1,35 @@
+.funcionalities-container {
+    background-color: var(--dark-blue-main);
+    padding: 2em;
+}
+
+.funcionalities-container h3 {
+    color: var(--white);
+}
+
+.funcionalities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.funcionalities-list-item {
+    flex-basis: 45%;
+    max-width: 700px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.funcionalities-list-item p {
+    word-break: break-word;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .funcionalities-list-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

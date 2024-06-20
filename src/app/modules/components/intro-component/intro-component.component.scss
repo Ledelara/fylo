@@ -1,5 +1,5 @@
-.container {
-    position: relative; /* Necessário para posicionamento absoluto dentro */
+.intro-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,11 +23,11 @@
 
 .text-container h1 {
     color: var(--white);
-    width: 570px;
+    width: 600px;
 }
 
 .text-container p {
-    width: 570px;
+    width: 600px;
 }
 
 .text-container button {
