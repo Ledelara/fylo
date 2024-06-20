@@ -4,14 +4,13 @@
     html, 
     body {
         height: 100%;
-        font-size: 14px;
-        background-color: var(--dark-blue-main);
     }
 
     body {
         margin: 0;
-        background: var(--black);
+        background: var(--dark-blue-main);
         font-family: Roboto, 'Helvetiva neue';
+        font-size: 14px;
     }
 
     p {
