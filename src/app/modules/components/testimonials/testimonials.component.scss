@@ -5,9 +5,13 @@
     background-color: var(--dark-blue-main);
     padding: 8rem;
     gap: 2rem;
+}
+
+.card-div:first-child {
     background-image: url('/assets/images/bg-quotes.png');
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: top left;
+    padding: 2em 0;
 }
 
 .testimonials-card {
@@ -37,6 +41,6 @@
 @media screen and (max-width: 768px) {
     .testimonials-container {
         flex-direction: column;
-        padding: 4rem;
-    }  
+        padding: 2rem;
+    }
 }
