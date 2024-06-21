@@ -4,38 +4,38 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
 
 .text-container {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 570px;
     text-align: center;
     gap: 20px;
-    z-index: 1;
+    padding: 4em;
+    background-image: url('/assets/images/bg-curvy-desktop.svg');
+    background-size: 100% 100%; /* Ajusta a largura automaticamente, mantendo a altura em 100% */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .text-container h1 {
     color: var(--white);
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .text-container p {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .text-container button {
     background-color: var(--cyan);
-}
-
-.background-image {
-    position: relative;
-    width: 100%;
-    z-index: 0;
 }
