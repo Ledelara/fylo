@@ -1,0 +1,89 @@
+.footer-container {
+    background-color: var(--dark-blue-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.footer-logo {
+    align-self: flex-start;
+    margin-bottom: 2em;
+    margin-left: 10em;
+}
+
+.footer-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.footer-CEP,
+.footer-phone,
+.footer-email {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.footer-CEP img,
+.footer-phone img,
+.footer-email img {
+    margin-right: 1em;
+}
+
+.footer-CEP p,
+.footer-phone p,
+.footer-email p {
+    margin: 0;
+}
+
+.footer-about-us,
+.footer-contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer-about-us a,
+.footer-contact-us a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 3em;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .footer-infos {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-email,
+    .footer-about-us {
+        margin-bottom: 4em;
+    }
+
+    .footer-CEP, 
+    .footer-phone, 
+    .footer-email, 
+    .footer-about-us, 
+    .footer-contact-us {
+        width: 100%;
+        justify-content: flex-start;
+        text-align: center;
+        align-items: flex-start;
+    }
+}
