@@ -1,0 +1,42 @@
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-blue-main);
+    padding: 8rem;
+    gap: 2rem;
+    background-image: url('/assets/images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.testimonials-card {
+    background-color: var(--dark-blue-testimonials);
+    border: none;
+    color: var(--white);
+    padding: 2em;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-profile p, strong {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        padding: 4rem;
+    }  
+}

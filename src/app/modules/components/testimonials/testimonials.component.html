@@ -1,0 +1,23 @@
+<div class="testimonials-container">
+    @for (item of testimonials(); track item) {
+        <mat-card appearance="outlined" class="testimonials-card">
+            <mat-card-content>
+                <p>{{ item.comment }}</p>
+
+                <div class="user-profile">
+                    <img 
+                        [src]="item.img"
+                    />
+                    <div class="user-profile-bio">
+                        <p>
+                            <strong>{{ item.userName }}</strong>
+                        </p>
+                        <p>
+                            {{ item.office }}
+                        </p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    }
+</div>
