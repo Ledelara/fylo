@@ -1,0 +1,40 @@
+.productive-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    gap: 4em;
+    background-color: var(--dark-blue-main);
+}
+
+.productive-text-container h1, p {
+    color: var(--white);
+}
+
+.productive-text-container a {
+    color: var(--cyan);
+}
+
+@media (max-width: 768px) {
+    .productive-container {
+        flex-direction: column;
+        padding: 2em;
+        gap: 2em;
+    }
+
+    .productive-image {
+        width: 100%;
+    }
+
+    .productive-text-container {
+        max-width: 100%;
+    }
+
+    .productive-text-container h1 {
+        font-size: 1.5em;
+    }
+
+    .productive-text-container p {
+        font-size: 0.9em;
+    }
+}
