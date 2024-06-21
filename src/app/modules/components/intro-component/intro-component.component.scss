@@ -39,3 +39,29 @@
 .text-container button {
     background-color: var(--cyan);
 }
+
+@media (max-width: 768px) {
+    .intro-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-container {
+        padding: 2em;
+        background-image: url('/assets/images/bg-curvy-mobile.svg');
+        background-size: cover;
+    }
+
+    .text-container h1, .text-container p {
+        max-width: 100%;
+    }
+
+    .text-container button {
+        width: 100%;
+    }
+
+    .intro-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
