@@ -4,6 +4,7 @@ import { IntroComponentComponent } from '../../components/intro-component/intro-
 import { FunctionalitiesComponentComponent } from '../../components/functionalities-component/functionalities-component.component';
 import { ProductiveComponent } from '../../components/productive/productive.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
+import { RegisterCardComponent } from '../../components/register-card/register-card.component';
 
 @Component({
   selector: 'app-main-page',
@@ -14,6 +15,7 @@ import { TestimonialsComponent } from '../../components/testimonials/testimonial
     FunctionalitiesComponentComponent,
     ProductiveComponent,
     TestimonialsComponent,
+    RegisterCardComponent,
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
