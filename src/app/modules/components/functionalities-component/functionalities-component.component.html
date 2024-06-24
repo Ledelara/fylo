@@ -1,15 +1,19 @@
-<div class="funcionalities-container">
-    <ul class="funcionalities-list">
-        @for (item of arrayBenefits(); track item) {
-            <li class="funcionalities-list-item">
-                <img 
-                    [src]="item.src" 
-                    [alt]="item.title"
-                    class="icon" 
-                />
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.description }}</p>
-            </li>
-        }
-    </ul>
-</div>
+@defer (on viewport) {
+    <div class="funcionalities-container">
+        <ul class="funcionalities-list">
+            @for (item of arrayBenefits(); track item) {
+                <li class="funcionalities-list-item">
+                    <img 
+                        [src]="item.src" 
+                        [alt]="item.title"
+                        class="icon" 
+                    />
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </li>
+            }
+        </ul>
+    </div>
+  } @placeholder() {
+    <div class="funcionalities-container"></div>
+  }
